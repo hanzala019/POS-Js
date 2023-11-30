@@ -1,23 +1,28 @@
-.body{
-    display: flex;
-   
+:root{
+  font-size: 16px;
 }
-.toolbar{
-    float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+body{
+  color: rgb(206, 186, 34);
+  
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+background: var(--base-dark-bg-1, #252836);
+
 }
-.toolbar button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+ .navbar {
+  width: 6.5rem;
+height: 52.125rem;
+flex-shrink: 0;
+position: fixed;
+border-radius: 1rem;
+background: var(--base-dark-bg-2, #1F1D2B);
+ }
+ .nav-item{
+  width: 5.75rem;
+height: 6.375rem;
+border-radius: 0.625rem;
+justify-content: center;
+align-items: center;
+
+ }
