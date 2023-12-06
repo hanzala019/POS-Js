@@ -1,28 +1,43 @@
-:root{
-  font-size: 16px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-  color: rgb(206, 186, 34);
-  
+.navi{
+  display: flex;
+  width: 1000px;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   border-radius: 1rem;
 background: var(--base-dark-bg-1, #252836);
-
 }
+
  .navbar {
   width: 6.5rem;
 height: 52.125rem;
-flex-shrink: 0;
-position: fixed;
+
 border-radius: 1rem;
 background: var(--base-dark-bg-2, #1F1D2B);
  }
  .nav-item{
   width: 5.75rem;
 height: 6.375rem;
+list-style-type: none;
 border-radius: 0.625rem;
 justify-content: center;
 align-items: center;
 
+ }
+ .header{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.5rem;
+ }
+ .product{
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.5rem;
  }
