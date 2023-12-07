@@ -1,0 +1,5 @@
+1.  evenlisteners are functions that activates or called when a certain action or event is trigger.
+    for example, clicking something, pressing keyboard buttons or moving your mouse over something.
+
+2.  document is an object that contains the html of the specific file that javascript is written in or linked to
+    
