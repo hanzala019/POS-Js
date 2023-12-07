@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div>
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+                <div>item 4</div>
+        </nav>
+
+        <div class="product-content">
+            <div>item 4</div>
+        </div>
+
+    </div>
+</body>
+
+    <script>
+
+    
+
+
+    </script>
+
+</html>
+    <script>
+
+   const userName = window.localStorage.getItem("name");
+   if(userName != " " || userName != null) 
+   {    
+        document.querySelector(".product-content").append(document.createElement("h1").innerText = ". ");
+        const h1 =  document.createElement("h1");
+        h1.innerText = "Welcome " + userName;
+        document.querySelector(".product-content").append(h1);
+        
+   }
+
+
+    </script>
+
+</html>

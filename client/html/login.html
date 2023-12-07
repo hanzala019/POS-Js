@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div>
+            <label> Enter UserName: </label>
+            <input id="name" type="text" required placeholder="eg. salam4dajob">
+        </div>
+        <div>
+            <label> Enter Password: </label>
+            <input id="password" type="password" required >
+        </div>
+        <div>
+            <button class="login-btn">Login</button>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+
+        const loginBtn = document.querySelector(".login-btn");
+        
+        
+        loginBtn.addEventListener("click", ()=>{
+            let userName = document.querySelector("#name").value;
+
+            if(userName  && document.querySelector("#password").value)
+        {
+            console.log(userName)
+            window.localStorage.setItem("name",userName)
+            
+            console.log("clicked")
+           
+            window.location.href = "file:///F:/UPtheGIT/Pair%20Programming/Pos/client/html/settings.html"
+        }
+        else 
+         {  alert("Please enter your username and password");
+            console.warn("Please enter your username and password")
+         }
+        })
+      
+
+
+    </script>
+
+</html>
