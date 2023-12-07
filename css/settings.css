@@ -1,3 +1,7 @@
+*{
+   color: white;
+   box-sizing: border-box;
+}
 body{
     height: 100vh;
     margin: 0;
@@ -38,18 +42,18 @@ body{
     
  }
  #item-2 {
- 
-    background-color: #af7a97; 
+   background-color: #2D303E;
     grid-row-start: 1;
     grid-column-start: 5;
  
     grid-row-end: 2;
     grid-column-end: 7;
+    display: flex ; justify-content: center;padding-top: 2em; font-size: 3em;
     
  }
  #item-3 {
  
-    background-color: #5595fd; 
+   background-color: #2D303E;
     grid-row-start: 2;
     grid-column-start: 5;
  
@@ -58,8 +62,7 @@ body{
     
  }
  #item-4 {
- 
-    background-color: #d5be7c; 
+   background-color: #2D303E;
     grid-row-start: 4;
     grid-column-start: 5;
  
@@ -69,7 +72,7 @@ body{
  }
  #item-5 {
  
-    background-color: #cd8056; 
+     
     grid-row-start: 1;
     grid-column-start: 1;
  
@@ -116,122 +119,56 @@ body{
     border: none;
     border-radius: 100px;
   }
-  .angry-rid {
+ .prods{
    display: grid;
-
-   grid-template-rows: .32fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-
+   grid-template-columns: repeat(3,1fr);
+   gap: 1em;
+   height: 91%;
+   overflow-y: scroll;
+  }
+  .Item{
+   background-color: #1F1D2B;
+   height: 10em;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .prods::-webkit-scrollbar {
+   display: none;
+ }
+ .prod_col{
+   display: grid;
+   grid-template-columns: 4fr 1fr 1fr;
+ }
+ .pcol{
    padding: 1em;
-   height: 100%;
-
  }
-
- #item0 {
-
-   background-color: #9879BD;
-   grid-row-start: 1;
-   grid-column-start: 1;
-   grid-row-end: 2;
-   grid-column-end: 4;
-
+ .orders{
+   display: grid;
+   grid-template-columns: 4fr 1fr 1fr;
+   height: 7em;
+   padding-left: 1em;
  }
-
- #item1 {
-
-   background-color: #7D7BDB;
-   grid-row-start: 2;
-   grid-column-start: 1;
-
-   grid-row-end: 3;
-   grid-column-end: 2;
-
+ .prod_order{
+   height: 88%;
+   overflow-y: scroll;
  }
-
- #item2 {
-
-   background-color: #B6799A;
-   grid-row-start: 2;
-   grid-column-start: 2;
-
-   grid-row-end: 3;
-   grid-column-end: 3;
-
+ .prod_order::-webkit-scrollbar {
+   display: none;
  }
-
- #item3 {
-
-   background-color: #7EB75C;
-   grid-row-start: 2;
-   grid-column-start: 3;
-
-   grid-row-end: 3;
-   grid-column-end: 4;
-
+ .orders button{
+   background-color: #EA7C69; border: none; border-radius: .5rem;margin: 1em;
  }
-
- #item4 {
-
-   background-color: #F78A79;
-   grid-row-start: 3;
-   grid-column-start: 2;
-
-   grid-row-end: 4;
-   grid-column-end: 3;
-
+ .ordertotal{
+   display: flex;
+   justify-content: space-around;
  }
-
- #item5 {
-
-   background-color: #8E9A5F;
-   grid-row-start: 3;
-   grid-column-start: 3;
-
-   grid-row-end: 4;
-   grid-column-end: 4;
-
+ .proceedbutt button{
+   height: 7em;
+   width: 22em;
+   background-color: #EA7C69; border: none; border-radius: .5rem;margin: 1em;
  }
-
- #item6 {
-
-   background-color: #E5D8DD;
-   grid-row-start: 4;
-   grid-column-start: 1;
-
-   grid-row-end: 5;
-   grid-column-end: 2;
-
- }
-
- #item7 {
-
-   background-color: #9DBBC9;
-   grid-row-start: 4;
-   grid-column-start: 2;
-
-   grid-row-end: 5;
-   grid-column-end: 3;
-
- }
-
- #item8 {
-
-   background-color: #79D57B;
-   grid-row-start: 4;
-   grid-column-start: 3;
-
-   grid-row-end: 5;
-   grid-column-end: 4;
-
- }
-
- #item9 {
-
-   background-color: #CD6DBA;
-   grid-row-start: 3;
-   grid-column-start: 1;
-
-   grid-row-end: 4;
-   grid-column-end: 2;
-
+ .orders:nth-of-type(odd){
+   background-color: #393C49;
  }
