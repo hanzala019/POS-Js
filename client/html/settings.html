@@ -17,34 +17,64 @@
                 <div>item 4</div>
         </nav>
 
-        <div class="product-content">
-            <div>item 4</div>
+        <div class="right-container">
+            <div class="mid-section">
+
+                <div> 
+                    <h4>Product Management</h4>    
+                </div>
+
+                <div> 
+                    <h4>Appearence</h4>    
+                </div>
+
+                <div> 
+                    <h4>Logout</h4>    
+                </div>
+            </div>
+    
+            <div class="product-management">
+                <div>
+                    <div class="product-top"> 
+                        <h1>top</h1>
+                    </div>
+                    <div class="product-mid">
+                        <h1>mid</h1>
+                    </div>
+                    <div class="product-bottom">
+                        <h1>bottom</h1>
+                    </div>
+                </div>
+            </div>
+    
         </div>
 
+        
     </div>
 </body>
 
     <script>
 
-    
 
+const divs = document.querySelectorAll('.mid-section div');
 
-    </script>
+function removeAddOrangeClass() {
+    divs.forEach(div => {
+        div.classList.remove('add-orange');
+    });
+}
 
-</html>
-    <script>
-
-   const userName = window.localStorage.getItem("name");
-   if(userName != " " || userName != null) 
-   {    
-        document.querySelector(".product-content").append(document.createElement("h1").innerText = ". ");
-        const h1 =  document.createElement("h1");
-        h1.innerText = "Welcome " + userName;
-        document.querySelector(".product-content").append(h1);
+divs.forEach(div => {
+    div.addEventListener('click', () => {
         
-   }
+        removeAddOrangeClass();
 
-
+        div.classList.add('add-orange');
+    });
+});
+divs[0].classList.add('add-orange');
+    
     </script>
 
 </html>
+ 

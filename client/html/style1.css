@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body{
+  background: #252836; 
+}
+
 /* The following code is for login.html*/
 
 .login-container{
@@ -11,7 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #1F1D2B;
+  /* background: #1F1D2B; */
   box-shadow: 0px 4px 4px rgb(75, 74, 74);
   height: 30vh;
 }
@@ -76,6 +80,68 @@ font-size: 15px;
   display: grid;
   grid-template-columns: 1fr 10fr ;
 
+}
+
+.right-container {
+  
+  display: flex;
+}
+
+.mid-section{
+  background-color: #ccc;
+  width: 20%;
+  height: 70vh;
+  margin-top: 6%;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #1F1D2B;
+  /* border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; */
+}
+
+.mid-section > div {
+  color: #e2dfdf;
+  height: 10vh;
+  padding: 20px;
+  border-bottom: #242427 solid 0.5px;
+  
+}
+
+.mid-section > div:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.add-orange {
+  background: #EA7C6942;
+  color: #df7969 !important;
+  border-right: #ec735e solid 2px;
+
+}
+
+.product-management {
+  background-color: #4e1a1a;
+  width: 65%;
+  height: 70vh;
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1D2B;
+}
+
+.product-top {
+  height: 10vh;
+  background-color: #741c1c;
+}
+
+.product-mid {
+  height: 45vh;
+  background-color: #29741c;
+}
+
+.product-bottom {
+  height: 15vh;
+  background-color: #5f741c;
 }
 
 .navbar{
